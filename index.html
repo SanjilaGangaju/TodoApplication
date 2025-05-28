@@ -9,15 +9,16 @@
 <body>
     <div class="container">
         <h1>Todo List</h1>
-        <input type="text" placeholder="enter your todo"/>
+        <input class="user-input" type="text" placeholder="enter your todo" onfocus="this.placeholder=''" />
         <button class="add-button">Add Todo</button>
         <div class="todo-items">
-            <ul>
-                <li><span>Apple</span>
+            <ul class="todo-item">
+                <li><span class="todo-items">Apple</span>
                     <span><button class="del-button">Delete</button></span>
             </ul>
             
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
