@@ -3,11 +3,11 @@ body{
 } 
 .container{
     width: 70vh;
-    height: 50vh;
+    height: auto;
     border-radius: 25px;
     background-color: rgb(233, 203, 214);
     margin: 100px auto;
-    padding: 10px;
+    padding: 10px 30px;
    
 }
 .container h1{
@@ -17,6 +17,11 @@ body{
     margin-bottom: 50px;
     text-align: center;
 }   
+.input-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .container input{
     width: 60%;
     margin: 0 5px;
@@ -33,8 +38,9 @@ body{
     outline: none;
     background-color: rgb(242, 242, 156);
     cursor: pointer;
+    margin-left: 20px;
 }
-.container .del-button{
+/* .container .del-button{
    cursor: pointer;
    border-radius: 25px;
     padding: 10px 20px;
@@ -45,4 +51,21 @@ body{
 .todo-items li span:first-child{
     margin-right: 110px;
    
+} */
+.list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    font-size: 1.1rem;
+    
+}
+.del-button{
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px 17px;
+    border: none;
+    outline: none;
+    background-color: rgb(245, 146, 151);
 }
