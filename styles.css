@@ -5,7 +5,7 @@ body{
     width: 70vh;
     height: auto;
     border-radius: 25px;
-    background-color: rgba(244, 178, 190, 0.3);
+    background-color: rgba(198, 192, 192, 0.1);
     backdrop-filter: blur(10px);
     margin: 100px auto;
     padding: 10px 30px;
