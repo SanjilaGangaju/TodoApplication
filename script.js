@@ -42,16 +42,17 @@ const handleAddButton = () => {
 const handleDelButton=(e)=>{
     console.log(e.target);
     const todoToRemove = e.target;
+    console.log(todoToRemove);
+     if (todoToRemove && todoToRemove.classList.contains("del-button")){
+        const li = todoToRemove.closest('li');
+        if (li) li.remove();
+    }
     let todoListContent = todoToRemove.closest('li').innerText;
-    console.log(todoListContent);
     todolists = todolists.filter((curTodo)=>{
       return curTodo!= todoListContent.toLowerCase();
     });
     addTotoListLocalStorage(todolists);
-    if (todoToRemove && todoToRemove.classList.contains(".del-button")){
-        const li =e.target.closest('li');
-        if (li) li.remove();
-    }
+   
    }
  
   
